@@ -14,7 +14,7 @@ export default function Home() {
         <h1 className={title()}>Hello!&nbsp;</h1>
         <br />
         <h1 className={title()}>
-          I'm Abhishek.
+          I&apos;m Abhishek.
         </h1>
         <h2 className={subtitle({ class: "mt-4" })}>
           I make stuff.
