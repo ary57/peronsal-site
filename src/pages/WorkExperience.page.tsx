@@ -1,10 +1,10 @@
-import Home  from '@/components/Home/Home'
+import WorkExperience from '../components/WorkExperience/WorkExperience';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
-export function HomePage() {
+export function WorkExperiencePage() {
   return (
     <>
-      <Home />
+      <WorkExperience />
       <ColorSchemeToggle />
     </>
   );

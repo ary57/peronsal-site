@@ -1,10 +1,10 @@
-import Home  from '@/components/Home/Home'
+import Courses from '../components/Courses/Courses';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
-export function HomePage() {
+export function CoursesPage() {
   return (
     <>
-      <Home />
+      <Courses />
       <ColorSchemeToggle />
     </>
   );
