@@ -1,7 +1,7 @@
-import Courses from '../components/Courses/Courses';
+import Courses from '../components/Education/Education';
 import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
-export function CoursesPage() {
+export function EducationPage() {
   return (
     <>
       <Courses />
