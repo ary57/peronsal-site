@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .home-container {
+    text-align: Left;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    color: #333;
+  }
+  
+  h1 span {
+    color: orange;
+  }
+  
+  p {
+    font-size: 2em;
+    color: #333;
+  }
+  

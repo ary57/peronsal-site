@@ -1,0 +1,26 @@
+.project-container{
+    outline: 2px solid black;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    outline: 2px solid black;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+.project-body {
+    padding: 1%;
+}
+
+.project-footer {
+    outline: 2px solid black;
+    box-shadow: 0 -1px 0 #000;
+}
+
+.tech-logo {
+    padding-top: 50%;
+}

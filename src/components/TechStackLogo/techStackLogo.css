@@ -1,0 +1,19 @@
+.tech-icon{
+    padding: 100%;
+}
+
+.tech-pill {
+    display: inline-flex;
+    padding: 10px 10px;
+    border-radius: 0px;
+    outline: 2px solid #f88379 ;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+.tech-pill:hover {
+background-color: #f88379; /* Darker shade for hover effect */
+}

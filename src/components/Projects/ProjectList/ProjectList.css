@@ -1,0 +1,12 @@
+#projects {
+    scroll-margin-top: 80px; /* Adjust this value to the height of your fixed header */
+}
+
+.project-list{
+    display: block;
+}
+
+.project-list > div{
+    display: inline-block;
+    margin: 3%;
+}
