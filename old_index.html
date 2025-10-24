@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Abhishek Aryal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 40px;
+    }
+    .resume-section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+    .name {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .contact-info {
+      font-size: 1rem;
+      color: #555;
+    }
+    .resume-wrapper {
+      background: #fff;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Print Optimization */
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .resume-wrapper {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        max-width: 100%;
+        margin: 0;
+      }
+      h2 {
+        border-bottom: 1px solid #000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <!-- Header -->
+    <div class="text-center mb-4">
+      <div class="name">Abhishek Aryal</div>
+      <div class="contact-info">Denver, CO | (443) 760-6326 | abhishek.ary7@gmail.com</div>
+    </div>
+
+    <!-- Education -->
+    <div class="resume-section">
+      <h2>Education</h2>
+      <p><strong>University of Iowa</strong> – Iowa City, IA<br>
+      <em>Bachelor of Science in Computer Science</em><br>
+      May 2023</p>
+    </div>
+
+    <!-- Experience -->
+    <div class="resume-section">
+      <h2>Experience</h2>
+      <p><strong>The Cigna Group</strong> – Denver, CO<br>
+      <em>Application Developer</em><br>
+      July 2024 – Present</p>
+      <ul>
+        <li>Led the frontend transition to a dynamic React/TypeScript web application to enable new features and extend user capabilities.</li>
+        <li>Assisted in creating and maintaining a Flask backend server to support business operations.</li>
+        <li>Automated identification of missing ServiceNow tickets using Python, reducing manual effort and ensuring accurate reporting.</li>
+      </ul>
+
+      <p><strong>The Cigna Group</strong> – Denver, CO<br>
+      <em>Data Analyst</em><br>
+      July 2023 – July 2024</p>
+      <ul>
+        <li>Contributed to ETL processes by developing Python scripts to extract, transform, and load data.</li>
+        <li>Generated requested output files in specified formats by querying and processing database data.</li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="resume-section">
+      <h2>Skills & Certifications</h2>
+      <ul>
+        <li>Programming: Python, TypeScript, JavaScript, SQL</li>
+        <li>Frameworks/Tools: React, Flask, Next.js, Prisma</li>
+        <li>Other: REST API, ServiceNow, Git/GitHub, MS SQL Server</li>
+        <li>Certification: AWS Certified Cloud Practitioner (2024)</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

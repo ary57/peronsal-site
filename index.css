@@ -1,0 +1,103 @@
+@page {
+  margin: 0.5in 0.75in;
+}
+
+@media print {
+  @page {
+    margin: 0.5in 0.75in;
+  }
+
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  h2, h3, .titles {
+    page-break-after: avoid;
+  }
+
+  .resume-section {
+    page-break-inside: avoid;
+  }
+
+  /* Only prevent bullet lists from breaking */
+  ul {
+    page-break-inside: avoid;
+  }
+}
+
+body {
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+#name {
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+#address {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.right {
+  float: right;
+}
+
+.titles {
+  line-height: 1.2;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  page-break-after: avoid;
+}
+
+.resume-section {
+  margin-bottom: 0.8rem;
+}
+
+ul {
+  margin-top: 0.1rem;      /* Reduced from 0.2rem */
+  margin-bottom: 0.1rem;   /* Reduced from 0.3rem */
+  padding-left: 18px;      /* Reduced from 20px */
+}
+
+ul li {
+  margin-bottom: 0.15rem;  /* Reduced from 0.3rem */
+  line-height: 1.1;        /* Added tighter line height for bullets */
+}
+
+p {
+  margin-top: 0.2rem;     /* Reduced from 0.3rem */
+  margin-bottom: 0.2rem;  /* Reduced from 0.3rem */
+}
+
+hr {
+  margin: 0.20rem 0;       /* Reduced from 0.3rem */
+}
+
+#courses {
+  display: inline;
+}
+
+.bullet-list {
+  list-style-type: disc;
+}
+
+a.link {
+  color: black;
+  text-decoration: none;
+}
+
+a.visited {
+  color: black;
+}

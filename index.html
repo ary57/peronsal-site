@@ -1,109 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Abhishek Aryal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      padding: 40px;
-    }
-    .resume-section {
-      margin-bottom: 30px;
-    }
-    h2 {
-      border-bottom: 2px solid #000;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
-      text-transform: uppercase;
-    }
-    .name {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-    .contact-info {
-      font-size: 1rem;
-      color: #555;
-    }
-    .resume-wrapper {
-      background: #fff;
-      padding: 40px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      max-width: 900px;
-      margin: auto;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Abhishek Aryal</title>
+  </head>
 
-    /* Print Optimization */
-    @media print {
-      body {
-        background: #fff;
-        padding: 0;
-      }
-      .resume-wrapper {
-        box-shadow: none;
-        border-radius: 0;
-        padding: 0;
-        max-width: 100%;
-        margin: 0;
-      }
-      h2 {
-        border-bottom: 1px solid #000;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="resume-wrapper">
+  <body>
     <!-- Header -->
-    <div class="text-center mb-4">
-      <div class="name">Abhishek Aryal</div>
-      <div class="contact-info">Denver, CO | (443) 760-6326 | abhishek.ary7@gmail.com</div>
-    </div>
+    <h2 id="name" class="titles">Abhishek Aryal</h2>
+    <p id="address">
+      (443) 760-6326 | abhishek.ary7@gmail.com |
+      <a href="https://www.linkedin.com/in/abhi57/">linkedin.com/in/abhi57/</a>
+    </p>
 
-    <!-- Education -->
-    <div class="resume-section">
-      <h2>Education</h2>
-      <p><strong>University of Iowa</strong> – Iowa City, IA<br>
-      <em>Bachelor of Science in Computer Science</em><br>
-      May 2023</p>
-    </div>
+    <!-- Section 1: Objective and Education -->
+    <section>
+      <!-- Objective -->
+      <h3 class="titles">Objective</h3>
+      <hr />
+      <p>
+        Junior full-stack developer with 1.5+ years of experience building
+        modern web applications using React, TypeScript, and Python. Fast
+        learner with proven track record owning frontend initiatives and
+        automating business processes across evolving technology stacks.
+      </p>
 
-    <!-- Experience -->
-    <div class="resume-section">
-      <h2>Experience</h2>
-      <p><strong>The Cigna Group</strong> – Denver, CO<br>
-      <em>Application Developer</em><br>
-      July 2024 – Present</p>
+      <!-- Education -->
+      <h3 class="titles">Education</h3>
+      <hr />
+      <p>
+        <b>The University of Iowa</b>, Iowa City, IA
+        <span class="right"><b>August 2019 - May 2023</b></span
+        ><br />
+        Bachelor of Science, Computer Science
+      </p>
+    </section>
+
+    <!-- Experience Header (no section wrapper) -->
+    <h3 class="titles">Experience</h3>
+    <hr />
+
+    <!-- Section 2: Application Developer -->
+    <section>
+      <p>
+        <b>The Cigna Group</b>, Denver, CO
+        <span class="right"><b>July 2024 - Present</b></span
+        ><br />
+        Application Developer
+      </p>
       <ul>
-        <li>Led the frontend transition to a dynamic React/TypeScript web application to enable new features and extend user capabilities.</li>
-        <li>Assisted in creating and maintaining a Flask backend server to support business operations.</li>
-        <li>Automated identification of missing ServiceNow tickets using Python, reducing manual effort and ensuring accurate reporting.</li>
+        <li>
+          Automated SOC/SOX compliance monitoring using Python with Pytest for
+          test coverage, reducing manual effort and ensuring accurate reporting.
+        </li>
+        <li>
+          Created a reusable Python module for automated database insertion,
+          eliminating the need to rebuild data loading logic for each new
+          compliance monitoring program.
+        </li>
+        <li>
+          Built a React/TypeScript application as sole frontend developer to
+          centralize compliance monitoring operations, enabling users to view,
+          filter, edit, and download reports across all automation programs with
+          authenticated access and real-time data validation.
+        </li>
+        <li>
+          Extended existing Flask backend with RESTful APIs to support frontend
+          operations, integrating Okta authentication and implementing endpoints
+          for data fetching, updates, and report downloads from SQL Server
+          database.
+        </li>
+        <li style="margin-top: 0.5rem">
+          <b>Technologies:</b> React, TypeScript, Python, Flask, Microsoft SQL
+          Server, Okta, Git/GitHub
+        </li>
       </ul>
+    </section>
 
-      <p><strong>The Cigna Group</strong> – Denver, CO<br>
-      <em>Data Analyst</em><br>
-      July 2023 – July 2024</p>
+    <!-- Section 3: Data Analyst -->
+    <section>
+      <p>
+        <b>The Cigna Group</b>, Denver, CO
+        <span class="right"><b>July 2023 - July 2024</b></span
+        ><br />
+        Data Analyst
+      </p>
       <ul>
-        <li>Contributed to ETL processes by developing Python scripts to extract, transform, and load data.</li>
-        <li>Generated requested output files in specified formats by querying and processing database data.</li>
+        <li>
+          Developed Python ETL scripts to extract data from PostgreSQL and
+          Oracle databases, transform according to business requirements, and
+          load results to AWS S3 in various formats (JSON, CSV, Excel).
+        </li>
+        <li>
+          Maintained and debugged existing data pipelines to ensure reliable
+          data delivery for downstream consumers.
+        </li>
+        <li style="margin-top: 0.5rem">
+          <b>Technologies:</b> Python, PostgreSQL, AWS S3, Oracle, Git/GitHub
+        </li>
       </ul>
-    </div>
+    </section>
 
-    <!-- Skills -->
-    <div class="resume-section">
-      <h2>Skills & Certifications</h2>
+    <!-- Section 4: Internship -->
+    <section>
+      <p>
+        <b>Noridian Healthcare Solutions</b>, Fargo, ND (Remote)
+        <span class="right"><b>June 2022 - December 2022</b></span
+        ><br />
+        Application Development Intern
+      </p>
       <ul>
-        <li>Programming: Python, TypeScript, JavaScript, SQL</li>
-        <li>Frameworks/Tools: React, Flask, Next.js, Prisma</li>
-        <li>Other: ETL processes, ServiceNow, Git/GitHub</li>
-        <li>Certification: AWS Certified Cloud Practitioner (2024)</li>
+        <li>
+          Developed SQL queries using Microsoft SQL Server to extract and join
+          data from multiple tables for reporting and analysis.
+        </li>
+        <li>
+          Created data visualizations and dashboards to support business
+          reporting needs.
+        </li>
+
+        <li style="margin-top: 0.5rem">
+          <b>Technologies:</b> SQL, Microsoft SQL Server
+        </li>
       </ul>
-    </div>
-  </div>
-</body>
+    </section>
+
+    <!-- Section 5: Skills & Certifications -->
+    <section>
+      <h3 class="titles">Skills & Certifications</h3>
+      <hr />
+      <p>
+        <b>Programming Languages:</b> Python, TypeScript, JavaScript, SQL<br />
+        <b>Web Development:</b> React, Flask, REST APIs, Tailwind CSS, DaisyUI,
+        Bootstrap<br />
+        <b>Databases:</b> Microsoft SQL Server, PostgreSQL, Oracle Database<br />
+        <b>Tools & Platforms:</b> Git/GitHub, AWS S3, Okta, Postman, Pytest,
+        Tableau<br />
+        <b>Certifications:</b> AWS Certified Cloud Practitioner (2024)
+      </p>
+    </section>
+  </body>
 </html>
